@@ -1,0 +1,44 @@
+.section-three {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.profile-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.profile-img img {
+	width: 100%;
+	height: auto;
+}
+
+.profile-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	text-align: center;
+}
+
+.profile-headings {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.profile-contacts p {
+	font: 
+		var(--unnamed-font-style-normal) normal 600 
+		var(--unnamed-font-size-14)/28px 
+		var(--unnamed-font-family-open-sans);
+	color: var(--unnamed-color-215dff);
+}
