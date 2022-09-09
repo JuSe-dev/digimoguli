@@ -1,19 +1,11 @@
 .section-four {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding-bottom: 22.3rem;
 }
 
 .contact-big {
 	position: relative;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%
-}
-
-.contact-big-img {
-	width: 100%;
+	justify-content: center;
 	padding: 11rem 0;
 	background: url(../assets/img/image23.png);
 	background-size: cover;
@@ -22,18 +14,17 @@
 }
 
 .contact-big-info {
-	width: calc(100vw - 4rem);
 	position: absolute;
 	top: 85%;
-	background-color: var(--unnamed-color-ffffff);
-	min-height: 25.5rem;
-	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 2.4rem;
-	text-align: center;
+	background-color: var(--unnamed-color-ffffff);
+	width: calc(100vw - 4rem);
+	padding: 4rem 2rem;
+	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2);
 }
 
 .contact-big-info button {
@@ -44,18 +35,12 @@
 .contact-big-txt {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 0.8rem;
+	text-align: center;
 }
 
-.contact-big-txt p {
-	font: 
-		var(--unnamed-font-style-normal) normal 
-		var(--unnamed-font-weight-normal) 
-		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
-		var(--unnamed-font-family-open-sans);
-}
-
-.contact-big-txt h1 {
+.contact-big-txt h1{
 	font: 
 		var(--unnamed-font-style-normal) normal 
 		var(--unnamed-font-weight-bold) 
@@ -63,3 +48,29 @@
 		var(--unnamed-font-family-open-sans);
 }
 
+.contact-big-txt h2{
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-normal) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
+		var(--unnamed-font-family-open-sans);
+}
+
+@media only screen and (min-width:  750px) {
+
+	.section-four {
+		padding: 0 4rem;
+	}
+
+	.contact-big {
+		width: 60vw;
+		padding: 25rem 0;
+	}
+
+	.contact-big-info {
+		top: calc((100% - (100% - 16rem)) / 2 );
+		left: 60%;
+		height: calc(100% - 16rem);
+		width: calc(60vw * 0.85);
+	}
+}

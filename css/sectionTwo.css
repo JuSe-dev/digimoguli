@@ -1,41 +1,62 @@
 
-	.read-more-cards {
+.read-more-cards {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 2.4rem;
-	}
+}
 
-	.read-more-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		gap: 4rem;
-		align-items: center;
-		width: 100%;
-		min-height: 30.2rem;
-		background-color: var(--unnamed-color-efefef);
-	}
+.read-more-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 4rem;
+	align-items: center;
+	width: 100%;
+	min-height: 30.2rem;
+	background-color: var(--unnamed-color-efefef);
+}
 
-	.read-more-txt {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+.read-more-txt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.4rem;
+	text-align: center;
+	padding: 0 2rem;
+}
+
+.read-more-txt h1 {
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-bold) 
+		var(--unnamed-font-size-18)/var(--unnamed-line-spacing-36) 
+		var(--unnamed-font-family-open-sans);
+}
+
+.read-more-txt p {
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-normal) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
+		var(--unnamed-font-family-open-sans);
+}
+
+
+.read-more-btn {
+	width: 100%;
+	background-color: var(--unnamed-color-d2d2d2);
+	padding: 1.1rem 0;
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-normal) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-32) 
+		var(--unnamed-font-family-open-sans);
+}
+
+@media only screen and (min-width: 750px) {
+
+	.read-more-cards {
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2.4rem;
-		text-align: center;
-		padding: 0 2rem;
 	}
-
-	.read-more-h1 {
-		font: 
-			var(--unnamed-font-style-normal) normal 
-			var(--unnamed-font-weight-bold) 
-			var(--unnamed-font-size-18)/var(--unnamed-line-spacing-36) 
-			var(--unnamed-font-family-open-sans);
-	}
-
-
-	.read-more-btn {
-		width: 100%;
-		background-color: var(--unnamed-color-d2d2d2);
-		padding: 1.6rem 0;
-	}
+}
