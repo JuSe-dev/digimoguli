@@ -51,14 +51,27 @@ html {
     font-size: 62.5%;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	gap: 8rem;
-}
-
 footer {
 	background-color: var(--unnamed-color-111111);
+}
+
+p {
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-normal) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
+		var(--unnamed-font-family-open-sans);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 8rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30rem;
+	max-width: 192rem;
 }
 
 .padded-container {
@@ -86,14 +99,62 @@ footer {
 	margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 550px) {
+
 	.padded-container {
-		padding: 0 4rem;
+		padding: 0 clamp(16%, 17.5%, 18%);
 	}
 }
 
-@media only screen and (min-width: 650px) {
-	.padded-container {
-		padding: 0 6rem;
+@media only screen and (min-width: 1150px) {
+
+	.wrapper {
+		margin-bottom: 8rem;
+	}
+}
+
+@media only screen and (min-width: 1650px) {
+
+	p,
+	footer ul li a {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-normal) 
+			var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) 
+			var(--unnamed-font-family-open-sans) !important;
+	}
+
+	.section-title-h3 {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-bold) 
+			var(--unnamed-font-size-32)/var(--unnamed-line-spacing-32) 
+			var(--unnamed-font-family-open-sans);
+		margin-bottom: 4rem;
+	}
+
+	.contact-us-btn {
+		width: 17.3rem;
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-normal) 
+			var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) 
+			var(--unnamed-font-family-open-sans);
+	}
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+	.contact-us-btn {
+		padding: 1.1rem 0;
+		width: 17.4rem;
+		background: initial;
+		border: solid thin var(--unnamed-color-222222);
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-normal) 
+			var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) 
+			var(--unnamed-font-family-open-sans);
 	}
 }

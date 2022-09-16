@@ -2,7 +2,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 6rem;
 }
 
 .menu-toggle {
@@ -92,10 +91,27 @@
 	}
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 851px) {
 
 	.nav-container {
-		padding: 5rem 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: var(--unnamed-color-ffffff);
+		z-index: 999;
+		padding: 2.5rem 0;
 		justify-content: space-around;
 	} 
+}
+
+@media only screen and (min-width: 1920px) {
+
+	.nav-container {
+		padding: 4.4rem 33.5rem;
+		justify-content: space-between;
+	}
+
+	.nav-items {
+		gap: 3.2rem;
+	}
 }
